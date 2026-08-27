@@ -7,12 +7,12 @@
 
         default_layer {
             bindings = <
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp N1 &kp N2 &kp N3 &kp N4
-                &kp G &kp H &kp I &kp J &kp K &kp L &kp N5 &kp N6 &kp N7 &kp N8
-                &kp M &kp N &kp O &kp P &kp Q &kp R &kp N9 &kp N0 &kp MINUS &kp EQUAL
-                &kp S &kp T &kp U &kp V &kp W &kp X &kp Y &kp Z &kp LBKT &kp RBKT
-                &kp SPACE &kp SPACE &none &none &none &none &kp SEMI &kp SQT &kp COMMA &kp DOT
-                &none &none &none &none &none &none &none &none &kp UP &kp ENTER
+/* Fila 1 */ &kp A &kp B &kp C &kp D &kp E         &kp N1 &kp N2 &kp N3 &kp N4 &none
+/* Fila 2 */ &kp F &kp G &kp H &kp I &kp J         &kp N5 &kp N6 &kp N7 &kp N8 &none
+/* Fila 3 */ &kp K &kp L &kp M &kp N &kp SEMI      &kp N9 &kp N0 &kp KP_PLUS &kp KP_MINUS &none
+/* Fila 4 */ &kp O &kp P &kp Q &kp R &kp S         &kp KP_DIVIDE &kp KP_MULTIPLY &kp EQUAL &kp KP_DOT &none
+/* Fila 5 */ &kp U &kp V &kp W &kp X &kp Y         &kp BSPC &kp SLASH &kp MINUS &kp ENTER &none
+/* Fila 6 */ &kp Z &kp SPACE &kp SPACE &kp SPACE &kp SPACE    &kp COMMA &kp DOT &none &none &none
             >;
         };
     };

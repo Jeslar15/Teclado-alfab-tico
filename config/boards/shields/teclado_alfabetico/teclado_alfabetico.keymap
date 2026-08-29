@@ -3,17 +3,56 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        /* Atajo: B + S = Modo Pendrive */
+        combo_bootloader {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&bootloader>;
+        };
+
+        /* Atajo: V + D = Reinicio */
+        combo_sys_reset {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&sys_reset>;
+        };
+
+        /* Atajo: J + Q = Bluetooth 1 (Tablet) */
+        combo_bt_0 {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&bt BT_SEL 0>;
+        };
+
+        /* Atajo: H + P = Bluetooth 2 (Móvil) */
+        combo_bt_1 {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&bt BT_SEL 1>;
+        };
+
+        /* Atajo: C + Y = Borrar Bluetooth actual */
+        combo_bt_clr {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&bt BT_CLR>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-/* Fila 1 */ &kp A &kp B &kp C &kp D &kp E         &none   &kp N1 &kp N2 &kp N3 &kp N4
-/* Fila 2 */ &kp F &kp G &kp H &kp I &kp J         &none   &kp N5 &kp N6 &kp N7 &kp N8
-/* Fila 3 */ &kp K &kp L &kp M &kp N &kp SEMI      &none   &kp N9 &kp N0 &kp KP_PLUS &kp KP_MINUS
-/* Fila 4 */ &kp O &kp P &kp Q &kp R &kp S         &kp T   &kp KP_DIVIDE &kp KP_MULTIPLY &kp LS(N0) &kp KP_DOT
-/* Fila 5 */ &kp U &kp V &kp W &kp X &kp Y         &kp Z   &kp BSPC &kp LS(MINUS) &kp EXCL &kp ENTER
-/* Fila 6 */ &kp SPACE &kp SPACE &kp SPACE &none &none    &none   &none &kp COMMA &bt BT_CLR &none
+/* Fila 1 (Posiciones 0 a 9) */   &kp A &kp B &kp C &kp D &kp E         &none   &kp N1 &kp N2 &kp N3 &kp N4
+/* Fila 2 (Posiciones 10 a 19) */ &kp F &kp G &kp H &kp I &kp J         &none   &kp N5 &kp N6 &kp N7 &kp N8
+/* Fila 3 (Posiciones 20 a 29) */ &kp K &kp L &kp M &kp N &kp SEMI      &none   &kp N9 &kp N0 &kp KP_PLUS &kp KP_MINUS
+/* Fila 4 (Posiciones 30 a 39) */ &kp O &kp P &kp Q &kp R &kp S         &kp T   &kp KP_DIVIDE &kp KP_MULTIPLY &kp LS(N0) &kp KP_DOT
+/* Fila 5 (Posiciones 40 a 49) */ &kp U &kp V &kp W &kp X &kp Y         &kp Z   &kp BSPC &kp LS(MINUS) &kp EXCL &kp ENTER
+/* Fila 6 (Posiciones 50 a 59) */ &kp SPACE &kp SPACE &kp SPACE &none &none    &none   &none &kp COMMA &kp DOT &none
             >;
         };
     };

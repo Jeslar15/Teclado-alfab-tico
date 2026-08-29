@@ -8,11 +8,11 @@
 
         default_layer {
             bindings = <
-/* Fila 1 */ &kp A &kp B &kp C &kp D &kp E         &kp T   &kp N1 &kp N2 &kp N3 &kp N4
-/* Fila 2 */ &kp F &kp G &kp H &kp I &kp J         &kp Z   &kp N5 &kp N6 &kp N7 &kp N8
+/* Fila 1 */ &kp A &kp B &kp C &kp D &kp E         &none   &kp N1 &kp N2 &kp N3 &kp N4
+/* Fila 2 */ &kp F &kp G &kp H &kp I &kp J         &none   &kp N5 &kp N6 &kp N7 &kp N8
 /* Fila 3 */ &kp K &kp L &kp M &kp N &kp SEMI      &none   &kp N9 &kp N0 &kp KP_PLUS &kp KP_MINUS
-/* Fila 4 */ &kp O &kp P &kp Q &kp R &kp S         &none   &kp KP_DIVIDE &kp KP_MULTIPLY &kp LS(N0) &kp KP_DOT
-/* Fila 5 */ &kp U &kp V &kp W &kp X &kp Y         &none   &kp BSPC &kp LS(MINUS) &kp EXCL &kp ENTER
+/* Fila 4 */ &kp O &kp P &kp Q &kp R &kp S         &kp T   &kp KP_DIVIDE &kp KP_MULTIPLY &kp LS(N0) &kp KP_DOT
+/* Fila 5 */ &kp U &kp V &kp W &kp X &kp Y         &kp Z   &kp BSPC &kp LS(MINUS) &kp EXCL &kp ENTER
 /* Fila 6 */ &kp SPACE &kp SPACE &kp SPACE &none &none    &none   &none &kp COMMA &bt BT_CLR &none
             >;
         };
